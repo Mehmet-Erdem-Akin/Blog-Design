@@ -1,0 +1,209 @@
+@import 'font.scss';
+
+header{
+    background-color: $color4 !important;
+    height: 8vh;
+    nav{
+        background-color: $color4 !important;
+        font-family: $yazi1 !important;
+        color: white !important;
+        height: 8vh;
+      
+        ul {
+            background-color: $color4 !important;
+        }
+        li {
+            a{
+                color: white !important;
+            }
+            &:hover {
+            background-color: $color3;
+            }
+        }
+    }
+}
+
+#intro {
+    background-color: $color1;
+    height: 100vh;
+    background-image: url("banner2.jpg");
+    background-size: cover;
+    background-position: center;
+    
+    h1 {
+        font-size: 5em;
+        font-family: $yazi1;
+        font-weight: bold;
+        -webkit-text-stroke: 2px red !important;
+    }
+    
+}
+
+#my-work{
+    height: auto;
+
+    .baslik2 {
+        text-align: center !important;
+        font-size: 5em;
+        opacity: 1;
+    }
+    
+    i {
+        font-size: 50px;
+        color: $color1;
+    }
+    h1 {
+        color: $color1;
+    }
+    h3 {
+        color: $color4 !important;
+    }
+    .box {
+        div {
+            border: 2px solid $color1;
+           
+        }
+    
+    }
+}
+
+#portfolyomuz {
+    background-color: $color1;
+    height: auto;
+    color: white;
+    .baslik{
+     color: black;
+     margin-top: -50px !important;
+ 
+    }
+    .baslik2{
+     text-align: center;
+     color: black;
+     font-size: 5em;
+     opacity: 0.2;
+     font-family: $yazi1;
+    }
+    .portfolyomuz {
+ 
+     
+       .flip-card {
+           background-color: transparent;
+           width: 300px;
+           height: 300px;
+           border: 3px solid #ffffff;
+           perspective: 1000px; /* Remove this if you don't want the 3D effect */
+         }
+         
+         /* This container is needed to position the front and back side */
+         .flip-card-inner {
+           position: relative;
+           width: 100%;
+           height: 100%;
+           text-align: center;
+           transition: transform 0.8s;
+           transform-style: preserve-3d;
+         }
+         
+         /* Do an horizontal flip when you move the mouse over the flip box container */
+         .flip-card:hover .flip-card-inner {
+           transform: rotateY(180deg);
+         }
+         
+         /* Position the front and back side */
+         .flip-card-front, .flip-card-back {
+           position: absolute;
+           width: 100%;
+           height: 100% !important;
+           -webkit-backface-visibility: hidden; /* Safari */
+           backface-visibility: hidden;
+         }
+         
+         /* Style the front side (fallback if image is missing) */
+         .flip-card-front {
+           background-color: rgb(255, 255, 255);
+           color: black;
+         }
+         
+         /* Style the back side */
+         .flip-card-back {
+           background-color: $color4;
+           color: white;
+           transform: rotateY(180deg);
+         }
+   }
+ }
+
+#skill {
+    height: auto !important;
+    .baslik2 {
+        opacity: 0.6;
+        color: $color1;
+        font-size: 4em;
+    }
+    .baslik{
+        color: $color1 !important;
+        margin-top: -30px;
+    }
+}
+
+#about {
+    background-image: url('about-bg.jpg');
+    background-size: cover;
+    height: auto;
+}
+
+@media (max-width: 768px) { 
+    #about {
+        background-position: center;
+    }
+   }
+
+#social {
+
+    .box {
+        width: auto;
+        height: auto;
+        transition: 0.3s;
+        &:hover {
+            background-color: black !important;
+            transition: 0.3s;
+        }
+    }
+    .box1 {
+        background-color: #3A589E !important;
+    }
+    .box2 {
+        background-color: #60A9DE !important ;
+    }
+    .box3 {
+        background-color: #CE3F4E !important;
+    }
+
+    i {
+        font-size: 50px;
+        color: white;
+    }
+}
+
+#contact-form {
+    color: white;
+    form {
+        background-color: $color4;
+    }
+    button {
+        color: white;
+        border: 2px solid white ;
+        &:hover {
+            color: $color1;
+            background-color: white;
+        }
+    }
+}
+
+footer {
+    color: white;
+    background-color: $color4;
+    a{
+        color: white;
+    }
+}
